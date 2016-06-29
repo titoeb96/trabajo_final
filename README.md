@@ -29,3 +29,18 @@ usuario varchar(100),
 clave varchar(100),
 fecha_nacimiento DATE,
 estado varchar(10));
+
+create table Alumnos(
+alumno_id int(10) auto_increment primary key not null,
+nombre varchar(25),
+apepat varchar(25),
+apemat varchar(25),
+fecha_nacimiento DATE,
+sala_id int(10),
+estado varchar(10));
+
+create table Salas(
+sala_id int(10) auto_increment primary key not null,
+nombre varchar(25),
+establecimiento_id int(10),
+estado varchar(10));
